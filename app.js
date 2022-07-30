@@ -4,7 +4,8 @@ const port = 3000;
 
 app.get('/', async(req, res)=>{
     res.json({
-        "msg": "some data"
+        "msg": "some data",
+        "date": "07/29/22"
     })
 });
 
