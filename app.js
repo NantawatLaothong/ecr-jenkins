@@ -3,12 +3,10 @@ const app = express();
 const port = 3000;
 
 app.get('/', async(req, res)=>{
-    res.send('hello world');
+    res.json({
+        "msg": "some data"
+    })
 });
-
-app.get('/cats', async(req, res)=>{
-    res.send('cat page');
-})
 
 app.listen(port, ()=>{
     console.log(`app is running on port ${port}`);
